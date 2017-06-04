@@ -15,7 +15,7 @@
           },
           success: function (data) { 
             data = JSON.parse(data);
-            $('.modal_title').html(data.post_title);
+            $('.modal-title').html(data.post_title);
             $('.modal-body').html(data.post_content);
           	$("#myModal").modal('show');
           }
