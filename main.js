@@ -13,7 +13,9 @@
               action: "my_action",
         		  "post-id" : post_id
           },
-          success: function (data) {         
+          success: function (data) {   
+            $('.modal_title').html(data.post_title);
+            $('.modal-body').html(data.post_content);
           	$("#myModal").modal('show');
           }
       	});
